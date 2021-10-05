@@ -6,6 +6,4 @@ categories: architecture technology
 excerpt_separator: <!--more-->
 ---
 the second thing i had to do in this project was to go home and
-<!--more-->
-eat some ass
 
