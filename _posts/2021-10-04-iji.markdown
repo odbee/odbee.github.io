@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "iji"
+date: 2021-10-01 19:56:48 +0200
+categories: architecture technology
+excerpt_separator: <!--more-->
+---
+the second thing i had to do in this project was to go home and
+<!--more-->
+eat some ass
+
