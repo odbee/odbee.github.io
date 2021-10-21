@@ -10,7 +10,7 @@ x: 300px
 ---
 "Katharsis. Lächle zum starten"
 
-
+![katharsis](/assets/images/katharsis.png "start screen")
 
 By mirroring the visitors facial expression onto the screen and making their reflection experience the process of alienation, the goal is to invoke a close sense empathy unachievable through traditional storytelling.
 

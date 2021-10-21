@@ -11,7 +11,7 @@ x: 420px
 ---
 
 arachna  is currently a work in progress with the goal of imitating real spiders in creating spiderwebs as architectural structures.
-
+![arachna](/assets/images/tarantula1.gif "tarantula animation")
 here is a link to the github repository: https://github.com/odbee/arachna
 
 Built with libcinder for C++ and the Boost Graph Library the goal is to highly parallelize the simulation process to create high density structures.
