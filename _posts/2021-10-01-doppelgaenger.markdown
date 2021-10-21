@@ -11,5 +11,11 @@ x: 100px
 ---
 
 What happens when a pandemic is no longer an abnormality but a constantly returning condition?
+![doppelgänger](/assets/images/doppelgang1.jpg "doppelgänger")
 
 Doppelgänger reintroduces the multiple corridor system of neopalladian architecture into today’s architecture to create a double circulation system needed in the case of a pandemic.
+
+![doppelgänger](/assets/images/doppelgang2.jpg "doppelgänger")
+![doppelgänger](/assets/images/doppelgang3.png "doppelgänger")
+![doppelgänger](/assets/images/doppelgang4.png "doppelgänger")
+![doppelgänger](/assets/images/doppelgang5.png "doppelgänger")
