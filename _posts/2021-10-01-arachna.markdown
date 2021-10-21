@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "tarantula"
+title:  "arachna"
 thumbnail: "assets/thumbnails/spiderweb.jpg"
 date: 2021-10-01 19:56:48 +0200
 tags: architecture technology
@@ -10,6 +10,8 @@ y: 460px
 x: 420px
 ---
 
-tarantula is currently a work in progress with the goal of imitating real spiders in creating spiderwebs as architectural structures.
+arachna  is currently a work in progress with the goal of imitating real spiders in creating spiderwebs as architectural structures.
+
+here is a link to the github repository: https://github.com/odbee/arachna
 
 Built with libcinder for C++ and the Boost Graph Library the goal is to highly parallelize the simulation process to create high density structures.
