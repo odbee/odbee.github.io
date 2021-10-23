@@ -7,33 +7,26 @@ var j;
 var ol, ot;
 var maxz=10;
 var elem;
-
-var mouseCursor = document.getElementById('cursor');
-window.addEventListener("mousemove", e=> {
-  mouseCursor.style.top=e.pageY + "px"
-  mouseCursor.style.left=e.pageX + "px"
-  document.getElementsByTagName("html")[0].getAttribute("style")
-  if (document.getElementsByTagName("html")[0].getAttribute("style")== "cursor: ew-resize;") {
-    mouseCursor.style.backgroundImage="url('/assets/images/Horizontal Resize.png')"
-  } else if (document.getElementsByTagName("html")[0].getAttribute("style")== "cursor: nesw-resize;") {
-    mouseCursor.style.backgroundImage="url('/assets/images/Diagonal Resize 2.png')"
-  } else if (document.getElementsByTagName("html")[0].getAttribute("style")== "cursor: nwse-resize;") {
-    mouseCursor.style.backgroundImage="url('/assets/images/Diagonal Resize 1.png')"
-  } else if (document.getElementsByTagName("html")[0].getAttribute("style")== "cursor: ns-resize;") {
-    mouseCursor.style.backgroundImage="url('/assets/images/Vertical Resize.png')"
-  } else if (document.getElementsByTagName("html")[0].getAttribute("style")== "cursor: move;") {
-   mouseCursor.style.backgroundImage="url('/assets/images/Move 2.png')"
-  } else mouseCursor.style.backgroundImage="none"
-  
+var inMotion=false;
+window.addEventListener("mouseup", e=> {
+  inMotion=false;
 })
+window.addEventListener("mousedown", e=> {
+  inMotion=true;
+})
+
+
 
 
 var myFunction = function() {
   // var attribute = this.getAttribute("data-myattribute");
   // alert(attribute);
   // console.log(this)
-  this.style.zIndex=90+maxz;
-  maxz+=20;
+  if (!inMotion) {
+    this.style.zIndex=90+maxz;
+    maxz+=20;
+  }
+
 };
 for (j = x.length-1; j >=0 ; j--) {
   // x[j].style.zIndex=j;
@@ -73,6 +66,8 @@ interact('.postbox')
         // update the element's style
         target.style.width = event.rect.width + 'px'
         target.style.height = event.rect.height + 'px'
+        var targetchild=target.getElementsByClassName("content")
+        targetchild[0].style.pointerEvents="none"
 
         // translate when resizing from top or left edges
         x += event.deltaRect.left
@@ -86,17 +81,22 @@ interact('.postbox')
  
       },
       end (event) {
-
+        var target = event.target
+        var targetchild=target.getElementsByClassName("content")
+        targetchild[0].style.pointerEvents="auto"
+        
       }
     },
     modifiers: [
 
 
       // minimum size
+      
       interact.modifiers.restrictSize({
         min: { width: 300, height: 300 }
       })
     ],
+    autoScroll: true,
     inertia: false
 
   })
@@ -144,6 +144,8 @@ function dragMoveListener (event) {
   // update the posiion attributes
   target.setAttribute('data-x', x)
   target.setAttribute('data-y', y)
+
+
 
 
 }
